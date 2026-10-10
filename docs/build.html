@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Build Your Own Drink — Toyas</title>
+<meta name="description" content="Create your perfect Toyas drink: choose a base, flavour, milk, sweetness and size, then add it to your cart.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Build Your Own Drink — Toyas">
+<meta property="og:description" content="Create your perfect Toyas drink: choose a base, flavour, milk, sweetness and size, then add it to your cart.">
+<meta property="og:image" content="assets/hero-cups.jpg">
+<meta name="theme-color" content="#0c2a5c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800&family=Titan+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="build">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-top">
+  <div class="pt-art" style="background-image:url(assets/build-cup.jpg)" role="img" aria-label="A green Toyas matcha"></div>
+  <span class="scribble" style="right:7%;top:36px" aria-hidden="true">Your drink.<br>Your way.</span>
+  <div class="wrap">
+    <h1>Create Your<br>Perfect Drink</h1>
+    <p>Choose your base, flavour, milk and customise it exactly how you like it.</p>
+  </div>
+</section>
+<div class="wrap" style="padding-bottom:70px">
+  <div class="stepper" id="stepper" role="group" aria-label="Steps"></div>
+  <div class="build-grid">
+    <div class="panel" id="panel" aria-live="polite"></div>
+    <aside class="panel creation" aria-label="Your creation">
+      <h3>Your Creation</h3>
+      <div class="cimg" id="cimg"></div>
+      <ul class="clist" id="clist"></ul>
+      <div class="est"><span>Estimated Price</span><b id="est"></b></div>
+      <p class="fine" style="margin-bottom:12px">Estimate only. Toyas confirms the final price.</p>
+      <div class="step-actions"><button class="btn ghost" type="button" id="back" hidden>Back</button><button class="btn block" type="button" id="next"></button></div>
+    </aside>
+  </div>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

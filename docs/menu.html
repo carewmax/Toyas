@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Menu — Toyas | Signature Matcha, Seasonal & Hojicha</title>
+<meta name="description" content="Browse the Toyas menu: signature matcha, seasonal matcha, hojicha and add-ons, with prices.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Menu — Toyas | Signature Matcha, Seasonal & Hojicha">
+<meta property="og:description" content="Browse the Toyas menu: signature matcha, seasonal matcha, hojicha and add-ons, with prices.">
+<meta property="og:image" content="assets/hero-cups.jpg">
+<meta name="theme-color" content="#0c2a5c">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700;800&family=Titan+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="menu">
+<div id="site-header"></div>
+<main id="main">
+
+<section class="page-top">
+  <div class="pt-art" style="background-image:url(assets/product-main.jpg)" role="img" aria-label="A green Toyas matcha with ice"></div>
+  <span class="scribble" style="right:6%;top:30px" aria-hidden="true">Good Drinks,<br>Good Vibes</span>
+  <div class="wrap">
+    <h1>Our Drinks</h1>
+    <p>Fresh ingredients. Bold flavours. Always Toyas.</p>
+  </div>
+</section>
+<div class="wrap" style="padding-bottom:70px">
+  <div class="pills" id="pills" role="group" aria-label="Filter by category" style="margin-top:22px"></div>
+  <div class="pills" style="margin:12px 0 0"><div class="menu-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M11 19a8 8 0 1 1 5.3-14A8 8 0 0 1 11 19zm10 2-4.3-4.3"/></svg><label class="sr-only" for="menu-q">Search the menu</label><input id="menu-q" type="search" placeholder="Search drinks…" autocomplete="off"></div></div>
+  <div id="menu-list" aria-live="polite"></div>
+  <section class="addons-box reveal" id="addons" aria-labelledby="add-h">
+    <h2 id="add-h">Add-ons</h2>
+    <div class="addon-row" id="addon-list"></div>
+    <p class="addons-note">Add-ons can be chosen on each drink's page.</p>
+  </section>
+</div>
+
+</main>
+<div id="site-footer"></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
