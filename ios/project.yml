@@ -1,0 +1,35 @@
+name: Toyas
+options:
+  bundleIdPrefix: com.toyas
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+targets:
+  Toyas:
+    type: application
+    platform: iOS
+    sources:
+      - path: Toyas
+      # The website (../docs) is bundled into the app as a folder reference.
+      - path: ../docs
+        type: folder
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.toyas.app
+        PRODUCT_NAME: Toyas
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    info:
+      path: Toyas/Info.plist
+      properties:
+        CFBundleDisplayName: Toyas
+        UILaunchScreen:
+          UIColorName: LaunchBackground
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        ITSAppUsesNonExemptEncryption: false
+        UIStatusBarStyle: UIStatusBarStyleLightContent
